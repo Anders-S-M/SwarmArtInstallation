@@ -328,10 +328,10 @@ def swarm_simulation(run_flag, environment_path1, environment_path2, environment
 
 if __name__ == '__main__':
     run_flag = Value('i', 1)
-    environment1_path = 'Swarm_project/danmarkskort.jpg'
-    environment2_path = 'Swarm_project/grid.jpg'
-    environment3_path = 'Swarm_project/black_circle.jpg'
-    environment4_path = 'Swarm_project/9_black_circle.png'
+    environment1_path = 'danmarkskort.jpg'
+    environment2_path = 'grid.jpg'
+    environment3_path = 'black_circle.jpg'
+    environment4_path = '9_black_circle.png'
     swarm_process = Process(target=swarm_simulation, args=(run_flag, environment1_path, environment2_path, environment3_path, environment4_path))
     swarm_process.start()
     swarm_process.join()
